@@ -1,12 +1,12 @@
 # Slotline
 
-[GitHub repository](https://github.com/TechiLoki/slotline) · [Upwork portfolio fields](docs/UPWORK.md)
+[GitHub repository](https://github.com/TechiLoki/slotline)
 
 Appointment booking for a small consulting team. Guests choose a service, person and available time; staff manage appointments, recurring hours, day exceptions and private time blocks.
 
 **Java 21 · PostgreSQL 16 · TypeScript · Docker Compose**
 
-Personal portfolio project. The seeded people and services are fictional. The application starts without appointments: bookings and workspace counts come from PostgreSQL.
+The seeded people and services are fictional. The application starts without appointments: bookings and workspace counts come from PostgreSQL.
 
 ## Run
 
