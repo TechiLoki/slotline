@@ -15,7 +15,7 @@ public final class Json {
     }
     private Json() {}
     public static JsonNode read(String value) {
-        try { JsonNode result = MAPPER.readTree(value); if (result == null) throw Problem.invalid("Expected valid JSON."); return result; }
+        try { JsonNode result = MAPPER.readTree(value); if (result == null || result.isMissingNode()) throw Problem.invalid("Expected valid JSON."); return result; }
         catch (Exception e) { throw Problem.invalid("Expected valid JSON."); }
     }
     public static String write(Object value) {
