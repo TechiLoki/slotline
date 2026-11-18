@@ -1,0 +1,1 @@
+{"name":"slotline-web","private":true,"version":"1.0.0","type":"module","scripts":{"build":"tsc && cp index.html style.css dist/","test":"node tests/format.test.mjs"},"devDependencies":{"typescript":"5.9.3"}}
