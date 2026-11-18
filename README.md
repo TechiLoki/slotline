@@ -1,5 +1,7 @@
 # Slotline
 
+[GitHub repository](https://github.com/TechiLoki/slotline) · [Upwork portfolio fields](docs/UPWORK.md)
+
 Appointment booking for a small consulting team. Guests choose a service, person and available time; staff manage appointments, recurring hours, day exceptions and private time blocks.
 
 **Java 21 · PostgreSQL 16 · TypeScript · Docker Compose**
@@ -47,7 +49,7 @@ Start `db` and `api` before the HTTP smoke test. Use Node 20+; `APP_URL` and `AD
 
 The Docker build runs six frontend tests and fifteen Java unit tests. The `tests` Compose service additionally runs ten real PostgreSQL integration tests. The workflow in `.github/workflows/ci.yml` builds the application, runs those tests, and exercises concurrent HTTP booking and the lifecycle. A plain `mvn verify` without `TEST_DATABASE_URL` skips database tests; it does not prove integration behavior.
 
-**Current evidence:** TypeScript compilation, six frontend tests, script syntax and Compose configuration pass locally. Java compilation, database integration, live HTTP behavior and browser visual checks have not run in this restricted workspace. See [VALIDATION.md](VALIDATION.md).
+**Current evidence:** The [full GitHub Actions run](https://github.com/TechiLoki/slotline/actions/runs/44328062774) passed Docker/Java builds, six frontend tests, 25 Java tests including ten real PostgreSQL integration tests, and the HTTP lifecycle check. Browser interaction/visual review remains pending. See [VALIDATION.md](VALIDATION.md).
 
 ## Layout
 
